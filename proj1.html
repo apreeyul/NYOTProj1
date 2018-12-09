@@ -1,5 +1,9 @@
 <!Doctype html>
 <!--this is a comment-->
+<!-- the first webpage is always named index.html because the server is
+defaulted to the name index; they recognize it as the first webpage and will
+automatically make it the first webpage
+-->
 
 <html>
     <head>
@@ -7,23 +11,35 @@
         <!--anything in the head will not show on the webpage-->
         <!-- -->
         <title> my blog </title>
-        <!--bootstrap-->
+
+        <!--WOW.js-->
+        <!--bootstrap
+        utilizes classes and ids <- used to make your own styling and not limited
+                                    to bootstrap
+        class <- can be repeated and have already been styled specifically
+        id <- unique to each individual element; can't be repeated
+        -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <!--font awesome>-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">    </head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
-    <body style = "background-color:#eaece5" background = "https://mbtskoudsalg.com/images/png-gif-tumblr-8.gif">
+        <!--Animate CSS-->
+        <link rel = "stylesheet" type = "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+        <!--linking the css style sheet-->
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+
+
+      </head>
+
+    <body style = "background-color:#eaece5">
      <!--Navbar-->
-        <nav class = "navbar navbar-expand-lg fixed-top navbar-light bg-light" >
-    <!--
+      <nav class = "navbar navbar-expand-lg fixed-top navbar-light bg-light">
+       <!--
         navbar = navigation bar
         navbar-fixed-top = stays on top of the page no matter your position on the page
         Navbar-light, bg-light = changes the color scheme to a light theme and background
-    -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+        -->
         <a class = "navbar-brand" href = "#"> avril </a>
         <!--^a tag for the links  -->
         <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target="#navbarNav">
@@ -57,26 +73,35 @@
             </div>
 
         </nav>
-        <!--creating a slideshow-->
-        <div id = "header" class = "header">
+
+      <!--creating a slideshow-->
+      <div id = "header" class = "header" style = "width: 50%; margin-left:auto; margin-right: auto;">
             <div class = "slideshow-container">
+              <!-- width: 90%; margin-left:auto; margin-right: auto; height: -->
             <!--
             slideshow-container: creates a responsive fixed width container that is centerd
             myimages = name of the class we will use to keep track of the images in the header
             -->
-                <div class = "myimages" style = "display: block; width: 90%; margin-left:auto; margin-right: auto;">
-                    <img src = "https://kathleenhalme.com/images/tumblr-clipart-mountains-6.png">
-                    <img src = "https://66.media.tumblr.com/8b143a8758ea4d0d0a9282c0cc7086a8/tumblr_op9d02GO4w1s35qyfo1_500.png">
-                </div>
+              <div class = "myimages">
+                <img src ="https://static.tumblr.com/74c3eb191d07d25d01559c7df255101e/sgfyuac/WXEnqfcnm/tumblr_static_43snlbkda48wksckw4w888go8_640_v2.gif"></img>
+              </div>
+              <div class = "myimages">
+                <img src = "https://media.giphy.com/media/7d6XvahtRpD0Y/giphy.gif"></img>
+              </div>
+              <div class = "myimages">
+                <img src = "http://25.media.tumblr.com/7724a0be7d011f0c6b5a93a6fc034c57/tumblr_mrj1hyGwmZ1rubkeho1_500.gif"></img>
+              </div>
+              <div class = "myimages">
+                <img src = "http://24.media.tumblr.com/7749a859bf17a039582e42c1a2ff69dc/tumblr_mgzufqRMqv1rjo3tzo4_500.gif">
+              </div>
             </div>
         </div>
 
-
-        <!-- About me -->
-        <div id = "about" class = "about">
-            <div class = "container" style = "text-align: center; color: #625750;">
-                <h2 > <strong> about me </strong> </h2>
-                <p> hellooooo</p>
+      <!-- About me -->
+      <div id = "about" class = "about">
+            <div class = "container" style = "text-align: center; color:#454140;">
+                <h2 style = "text-shadow: 2px 2px #454140; color:#b9b0b0;"> <strong> about me </strong> </h2>
+                <p> fun fact: im totally born in april</p>
                 <hr>
                 <h3> my favorites </h3>
                 <div class = "row">
@@ -98,105 +123,199 @@
           </div>
         </div>
 
-        <!-- team -->
-      <div id = "team" class = "team" style = "text-align: center;">
-        <div class = "container">
-          <h2 style = "color: #c94c4c; text-align: center;"><strong> my friends </strong></h2>
+      <!-- team -->
+      <div id = "team" class = "team" style = "text-align: center; ">
+          <div class = "container">
+          <h2 style = "color: #b9b0b0; text-shadow: 2px 2px #454140; text-align: center;"><strong> this is the team </strong></h2>
           <div class = "row">
-            <div class = "col-lg-4 col-md-4">
-              <img src= "joyce2.PNG" class = "circle.img"> </img>
+            <div class = "col-lg-6 col-md-4">
+              <img src= "https://upload.wikimedia.org/wikipedia/en/2/22/Charlie_Brown.png" class = "img-cirlce"> </img>
             </div>
 
             <div class = "col-lg-8 col-md-8" style= "color:#616b66;">
-              <h5> joyce </h5>
-              <h6> best friend 1 </h6>
-              <p> since '10 </p>
+              <h5> CHARLI B </h5>
+
             </div>
           </div>
           <div class = "col-lg-4 col-md-4">
-            <img src = "" class = "circle.img"> </img>
+            <img src = "https://upload.wikimedia.org/wikipedia/en/e/e9/Lucy_van_Pelt.png" class = "img-cirlce"> </img>
           </div>
 
           <div class = "col-lg-8 col-md-8" style= "color:#616b66;">
-            <h5> nathalie </h5>
-            <h6> best friend 2 </h6>
-            <p> since '10 </p>
+            <h5> LUCY V </h5>
+
           </div>
           <div class = "col-lg-4 col-md-4">
-            <img class = "circle.img" src = "ahmed2.png" > </img>
+            <img src = "https://upload.wikimedia.org/wikipedia/en/9/9d/Franklin_%28Peanuts%29.png" class = "img-cirlce" > </img>
           </div>
 
           <div class = "col-lg-8 col-md-8" style= "color:#616b66;">
-            <h5> ahmed </h5>
-            <h6> best friend 3 </h6>
-            <p> since '12 </p>
+            <h5> FRANKSTER </h5>
+
           </div>
           <div class = "col-lg-4 col-md-4">
-            <img src = "zinab1.PNG" class = "circle.img"> </img>
+            <img src = "https://vignette.wikia.nocookie.net/p__/images/8/88/Sally_Brown.png/revision/latest?cb=20131027221729&path-prefix=protagonist" class = "img-cirlce"> </img>
           </div>
 
           <div class = "col-lg-8 col-md-8" style= "color:#616b66;">
-            <h5> zinab </h5>
-            <h6> best friend 4 </h6>
-            <p> since '16 </p>
+            <h5> SALLI B </h5>
+
           </div>
+          <div class = "col-lg-4 col-md-4">
+            <img src = "https://upload.wikimedia.org/wikipedia/en/2/24/Marcie_from_Peanuts.png" class = "img-cirlce"> </img>
+          </div>
+
+          <div class = "col-lg-8 col-md-8" style= "color:#616b66;">
+            <h5> MARCI </h5>
+
+          </div>
+
         </div>
       </div>
 
-        <!--contact-->
-        <div id = "contact" class = "contact">
+      <!--contact-->
+      <div id = "contact" class = "contact">
           <div class ="container">
-            <h2> contact us </h2>
+            <h2 style = "text-shadow: 2px 2px #454140; color:#b9b0b0; text-align: center;"> <b> contact us </b> </h2>
             <div class = "row">
               <div class = "col-lg-6 col-md-6">
+                          <!-- ^you can have numerous classes, which
+                        are separated by a space -->
+                        <div class = "input-group input-group-lg">
+                          <!--
+                          input-group-lg: creates a large input and groups inputs together
+                          type = "text": the type of form, which is a text form in this case
+                          sizing-addon1: refers to the size of the form
+                          placeholder: text before user types onto the form
+                         -->
+                          <div class = "input-group-prepend">
+                            <span class = "input-group-text" id =" basic-addon1">
+                            <i class="fas fa-address-card" aria-hidden = "true"> </i></span>
+                          </div>
+                          <input type = "text" class = "form-control" aria-descriedby = "sizing-addon-1"
+                          placeholder = "Full Name" />
+                        </div>
 
-              </div>
+                        <div class = "input-group input-group-lg">
+                          <div class = "input-group-prepend">
+                            <span class = "input-group-text" id = "basic-addon1"><i class="fas fa-at" aria-hidden = "true"></i></span>
+                          </div>
+                          <input type = "text" class = "form-control" aria-descriedby = "sizing-addon-1"
+                          placeholder="Email"/>
+                        <div>
+                        <div class = "input-group input-group-lg">
+                          <div class = "input-group-prepend">
+                            <span class = "input-group-text" id = "basic-addon1"><i class= "fas fa-phone-square" aria-hidden = "true"></i></span>
+                          </div>
+                          <input type = "text" class = "form-control" aria-descriedby = "sizing-addon-1"
+                          placeholder="Phone Number"/>
+                        <div>
+                </div>
+
               <div class = "col-lg-6 col-md-6">
-
+                <div class = "input-group">
+                  <textarea cols ="100" rows = "6" class = "form-control message"></textarea>
+                </div>
+                <button class = "btn btn-primary btn-block" type = "button" style = "background-color: #454140;"> Submit </button>
+                <!--
+                btn-block: changes the width of the button to be the full width of the parent element
+                -->
+              </div>
               </div>
             </div>
           </div>
         </div>
+
+      <!--donate-->
+      <div id = "donate" class = "donate">
+          <div class = "container">
+            <h2 style = "text-align: left; text-shadow: 2px 2px #454140; color:#b9b0b0;"><b> Donate </b></h2>
+            <div class = "row justify-content-center">
+              <div class = "col-lg-6 col-md-6">
+                <button type = "button" class = "button btn-outline-primary btn-lg" aria-pressed = "true" style = "background-color: #454140; color: #eaece5;"> $25K </button>
+                <button type = "button" class = "button btn-outline-primary btn-lg" aria-pressed = "true" style = "background-color: #454140; color: #eaece5;"> $50K </button>
+                <button type = "button" class = "button btn-outline-primary btn-lg" aria-pressed = "true" style = "background-color: #454140; color: #eaece5;"> $100K </button>
+              </div>
+              <div class = "row justify-content-center">
+                <input type = "text" class = "form-control" placeholder="$" aria-label="" aria-descriedby="basic-addon1">
+                <div class = "input-group-append">
+                  <button class = "btn btn-primary" type = "button" style = "background-color: #454140; color: #eaece5;"> Donate </button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      <!--footer-->
+      <div id = "footer" class = "footer">
+          <div class = "container">
+            <div class = "row">
+              <div class = "col-lg-4 col-md-4">
+                <h4>Contact</h4>
+                <p><i class="fas fa-torii-gate" aria-hidden = "true"></i>1002, brown street, cartoon ave, 1950</p>
+                <p><i class="far fa-envelope-open" aria-hidden = "true"></i>charliebrown@cartoons.org</p>
+                <p><i class="fas fa-mobile" aria-hidden ="true"></i> (231)312-3112 </p>
+                <p><i class="fas fa-wifi" aria-hidden = "true"></i> www.charliebrowninc.org</p>
+              </div>
+              <div class = "col-lg-4 col-md-4">
+                <h4>About</h4>
+                <p><i class = "fa fa-address-card" aria-hidden = "true"></i>About Us</p>
+                <p><i class="fas fa-lock" aria-hidden = "true"></i>Privacy</p>
+                <p><i class="fas fa-file-contract" aria-hidden = "true"></i>Terms & Conditions</p>
+                <p></p>
+              </div>
+              <!--social media-->
+              <div class = "col-lg-4 col-md-4">
+                <h4>Social Media</h4>
+                <p>
+                  <i class = "fab fa-facebook-square" aria-hidden = "true"> </i>
+                  <i class = "fab fa-twitter-square" aria-hidden = "true"> </i>
+                  <i class = "fab fa-linkedin" aria-hidden = "true"> </i>
+                </p>
+                <input type = "text" class = "form-control" placeholder = "Email Address"
+                aria-label = "" aria-descriedby = "basic-addon1">
+                <div class = "input-group-append">
+                  <button class = "btn btn-success" type = "button" style = "background-color: #454140; color: #eaece5;">Subscribe</button>
+                </div>
+              </div>
 
 
 
           <!-- the id helps with navigation-->
 
+
+
         <!-- font awesome = great resource for icons -->
 
         <!--bootstrap divides the page into a grid, specifying the number of
-      rows and colums that the section should cover -->
+      rows and colums that the section should cover
+      bootstrap is a library with both front(everything visual) & back(processing) ends
+     -->
 
-        <h2 style = "text-align: center; color: #405d27"> <em>welcome!</em> </h2>
-
+        <h2 style = "text-align: center; text-shadow: 2px 2px #454140; color:#b9b0b0;"> <b>welcome!</b> </h2>
         <!--^ a heading -->
-
-        <p style = "text-align: center; color: #3e4444; font-size: 12px"> this is <b>april wu's</b> blog</p>
-         <!--^paragraph -->
-        <p style = "text-align: center; color: #484f4f; font-size: 12px"> hope you enjoy reading it</p>
-        <img src = "https://78.media.tumblr.com/a3ae3a3afef440787668d56a075877df/tumblr_ouuaigVzab1tulnfbo1_1280.gif"
-            style = "height: 270px; width: 600px; display: block; width: 80%; margin-left:auto; margin-right: auto;">
+        <img src = "https://i.pinimg.com/originals/c2/49/68/c249688c04e0460a092fc150871cf808.gif"
+            style = "height: 270px; width: 900px; display: block; width: 80%; margin-left:auto; margin-right: auto;">
               <!--centering => style = "display: block; width: 80%; margin-left:auto; margin-right: auto;"-->
 
         <div>
-            <h4 style="color:#625750; text-align: left"> intro. </h4>
-            <p style="color:#625750; text-align: left; font-size:10px">
+            <h4 style="color:#454140; text-align: left"> intro. </h4>
+            <p style="color:#454140; text-align: left; font-size:10px">
                  <span>this is in a span tag </span> </p>
                  <!-- would not skip to a new line; continues on previous line -->
-            <h5 style="color: #405d27"> my favorite drinks:</h5>
-            <ul style = "font-size: 12px; color: #686256" type = "circle"> <!-- <ul> is an unordered list -->
+            <h5 style="color: #454140"> my favorite drinks:</h5>
+            <ul style = "font-size: 12px; color: #454140" type = "circle"> <!-- <ul> is an unordered list -->
                 <li> coffee </li> <!-- <li> means list -->
                 <li> bubble tea </li>
                 <li> green tea </li>
             </ul>
-            <ol style = "font-size: 12px; color: #686256" type = "I"> <!-- <ol> makes an ordered list-->
+            <ol style = "font-size: 12px; color: #454140" type = "I"> <!-- <ol> makes an ordered list-->
                 <li> americano </li>
                 <li> matcha </li>
                 <li> loose leaf, unsweetened</li>
             </ol>
             <hr> <!-- <hr> is a horizontal line that breaks up the page-->
-            <img src = "https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/4/47/Hotbabes.png/revision/latest?cb=20171103050336"
-              style = " margin: center;height: 380px; width: 600px; display: block; width: 80%; margin-left:auto; margin-right: auto;">
+            <img src = "https://media.giphy.com/media/4QTRR1Dhxp3zi/giphy.gif"
+              style = " margin: center; display: block; width: 80%; margin-left:auto; margin-right: auto;">
             <hr>
 
             <form style = "color: #625750; text-size: 14px">
@@ -217,13 +336,45 @@
             <fieldset>
             <label>
             -->
-            
-            <!--to update github
-            1) git status
-            2) git add . 
-            3) git commit -m "a message about what you did" e,g, git commit -m "Add nav bar"
-            4) git push
-            -->
         </div>
+
+        <!--Get involved-->
+        <div id = "getinvolved" class = "getinvolved">
+          <div class = "container">
+            <h2 style = "text-shadow: 2px 2px #454140; color:#b9b0b0;"> <b> get involved </b> </h2>
+            <div class = "col-lg-4 col-md-4 wow flipInY" data-wow-delay="1.2s">
+              <div class = "options">
+                <i class = "fas fa-globe-americas" aria-hidden="true"></i>
+                <h3 style = "color:#454140;"> <b>explore</b> </h3>
+                <p> blah blah blah</p>
+                <button class = "btn btn-success" style = "background-color: #454140; color: #eaece5;"> visit </button>
+              </div>
+              <div class = "col-lg-4 col-md-4 wow flipInY" data-wow-delay="1.6s">
+                <div class = "options">
+                  <i class = "fas fa-hands-helping" aria-hidden= "true"> </i>
+                  <h3 style = "color:#454140;"> <b> volunteer </b> </h3>
+                  <p> help needed </p>
+                  <button class ="btn btn-success" style = "background-color: #454140; color: #eaece5;"> sign up </button>
+                </div>
+              </div>
+            <div class = "col-lg-4 col-md-4 wow flipInY" data-wow-delay="2.0s">
+              <div class = "options">
+                <i class = "fas fa-hand-holding-usd" aria-hidden= "true"></i>
+                <h3 style = "color:#454140;"> <b> give </b> </h3>
+                <p> accepting donations! </p>
+                <button class = "btn btn-success" style = "background-color: #454140; color: #eaece5;"> donate </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src ="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+          <script>
+            new WOW().init();
+          </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script type="text/javascript" src ="javascript.js"></script>
     </body>
 </html>
